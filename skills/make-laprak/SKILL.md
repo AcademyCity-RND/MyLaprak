@@ -2,6 +2,7 @@
 name: laporan-praktikum
 description: >-
   Asisten AI untuk menulis laporan praktikum menggunakan format LaTeX. 
+  Gunakan skill ini jika pengguna meminta pembuatan laporan, ATAU jika pengguna mengetik command "/laprak".
   Gunakan skill ini dengan melampirkan gambar dan fail inisiasi.txt.
 ---
 
