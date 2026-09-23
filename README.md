@@ -30,6 +30,7 @@ Kami sudah menyediakan script instalasi untuk mengonfigurasi Git Template:
 
 - `plugin.json`: File manifest yang mendeklarasikan folder ini sebagai plugin.
 - `skills/make-laprak/SKILL.md`: File instruksi AI (Prompt Utama).
+- `skills/make-laprak-info/SKILL.md`: File instruksi AI khusus untuk menampilkan dokumentasi bantuan (`/make-laprak-info`).
 - `skills/make-laprak/matkul/`: Folder berisi spesifikasi atau aturan per mata kuliah.
 - `skills/make-laprak/template-general/`: Folder berisi *template* laporan kosong yang dapat Anda konfigurasi nanti.
 
@@ -38,7 +39,7 @@ Kami sudah menyediakan script instalasi untuk mengonfigurasi Git Template:
 1. **Persiapan:** Masukkan modul PDF, kumpulkan *screenshot* bernomor di dalam `/screenshot-hasil/`, dan tulis `inisiasi.txt` (peta gambar) Anda di workspace Anda.
 2. **Panggil AI:** Buka fitur *chat* pada Antigravity di dalam *workspace* Anda. Plugin ini otomatis terdeteksi.
 3. **Ketik Perintah Dinamis Anda:**
-   > *"/make-laprak Sectionnya akan jadi 2 yaitu Hasil Praktikum dan Hasil Akhir. Lihat seluruh png yang ada di folder ini saja..."*
+   > *"/make-laprak tolong buatkan laporan praktikum untuk matkul Jaringan. Section pembahasannya dibagi jadi 2 yaitu Hasil Praktikum (untuk gambar 1-10) dan Hasil Akhir (untuk gambar 11-12). Analisis semua screenshot di folder screenshot-hasil dan cocokkan dengan deskripsi di file inisiasi.txt."*
 4. **Interaksi:** AI akan membaca `inisiasi.txt`, mengalokasikan teks untuk gambar yang belum ada, dan bekerja selangkah demi selangkah sesuai aturan di `SKILL.md`.
 
 ## ℹ️ Informasi Tambahan
