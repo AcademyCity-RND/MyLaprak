@@ -19,8 +19,8 @@ Anda adalah agen AI ahli yang bertugas membantu saya (Avril) menyusun Laporan Pr
 Setiap kali saya memberikan instruksi awal, Anda harus menjalankan alur berikut SECARA BERURUTAN:
 
 ### TAHAP 1: Inisiasi & Pemahaman Konteks
-- Baca file `template-laporan.md` (jika ada di folder) untuk memahami struktur baku.
-- Baca file `matkul-[nama-matkul].md` yang saya sebutkan untuk memahami aturan spesifik mata kuliah tersebut.
+- Baca file template di dalam folder [template-general/](./template-general/) untuk memahami struktur baku laporan.
+- Baca file aturan spesifik mata kuliah di dalam folder [matkul/](./matkul/) jika saya menyebutkan nama matkulnya.
 - **BACA FILE `inisiasi.txt`:** Ini adalah "peta utama" Anda. Cocokkan penjelasan di dalamnya dengan *screenshot* bernomor (misal 1-22.png) di folder. Jadikan file ini acuan mutlak tentang apa yang terjadi di setiap gambar.
 - **Aksi Anda:** Rangkum pemahaman Anda tentang tugas ini (termasuk *section* kustom yang saya minta, seperti "Hasil Praktikum" vs "Hasil Akhir") dalam 2-3 kalimat, lalu tanyakan: *"Apakah rangkuman ini sudah sesuai, dan apakah saya bisa mulai menyusun kerangka/Outline?"*
 
