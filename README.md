@@ -38,5 +38,10 @@ Kami sudah menyediakan script instalasi untuk mengonfigurasi Git Template:
 1. **Persiapan:** Masukkan modul PDF, kumpulkan *screenshot* bernomor di dalam `/screenshot-hasil/`, dan tulis `inisiasi.txt` (peta gambar) Anda di workspace Anda.
 2. **Panggil AI:** Buka fitur *chat* pada Antigravity di dalam *workspace* Anda. Plugin ini otomatis terdeteksi.
 3. **Ketik Perintah Dinamis Anda:**
-   > *"Gunakan skill laporan-praktikum untuk membuatkan laporan. Sectionnya akan jadi 2 yaitu Hasil Praktikum dan Hasil Akhir. Lihat seluruh png yang ada di folder ini saja..."*
+   > *"/make-laprak Sectionnya akan jadi 2 yaitu Hasil Praktikum dan Hasil Akhir. Lihat seluruh png yang ada di folder ini saja..."*
 4. **Interaksi:** AI akan membaca `inisiasi.txt`, mengalokasikan teks untuk gambar yang belum ada, dan bekerja selangkah demi selangkah sesuai aturan di `SKILL.md`.
+
+## ℹ️ Informasi Tambahan
+Jika Anda lupa atau ingin mengecek panduan pemakaian dengan cepat, Anda bisa memanggil:
+> *"/make-laprak-info"*
+AI akan langsung merespons dengan penjelasan fungsionalitas dan instruksi dari plugin ini.

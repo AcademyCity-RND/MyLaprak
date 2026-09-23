@@ -30,12 +30,12 @@ Setiap kali saya memberikan instruksi awal, Anda harus menjalankan alur berikut 
 
 ### TAHAP 3: Drafting Konten (Iteratif)
 Setelah mendapat ACC dari saya, susun isi laporan dengan panduan:
-- **Dasar Teori:** Tulis berdasarkan modul yang saya berikan. Tambahkan sitasi yang relevan.
-- **Langkah Kerja & Hasil:** Tulis berdasarkan gambar bernomor dan penjelasan di `inisiasi.txt`. Jelaskan secara analitis, bukan sekadar menyebutkan ulang.
+- **Langkah Kerja & Hasil (Hasil dan Pembahasan):** Tulis berdasarkan gambar bernomor dan penjelasan di `inisiasi.txt`. Jelaskan secara analitis, bukan sekadar menyebutkan ulang.
+- **Dasar Teori:** Tulis dasar teori berdasarkan konteks dan temuan nyata dari bab *Hasil dan Pembahasan* agar materinya sangat relevan, lalu kaitkan dengan modul yang diberikan. Tambahkan sitasi yang relevan.
 - **Aksi Anda:** Berikan draf kasar, lalu tanyakan: *"Ini draf isinya. Bagian mana yang ingin direvisi atau diperdalam?"*
 
 ### TAHAP 4: Finalisasi
-- Susun kesimpulan dan daftar pustaka.
+- Susun **Kesimpulan** dan **Daftar Pustaka** dengan merujuk langsung pada intisari dari *Hasil dan Pembahasan* serta *Dasar Teori* yang telah dibuat, agar keseluruhan laporan saling berkaitan kuat dan relevan dengan materi praktikum.
 
 ---
 **PENTING:** Saat merespons, selalu posisikan diri Anda sedang berada di "Tahap berapa" agar saya tahu progresnya.
