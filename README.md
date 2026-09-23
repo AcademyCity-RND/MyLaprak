@@ -46,3 +46,17 @@ Kami sudah menyediakan script instalasi untuk mengonfigurasi Git Template:
 Jika Anda lupa atau ingin mengecek panduan pemakaian dengan cepat, Anda bisa memanggil:
 > *"/make-laprak-info"*
 AI akan langsung merespons dengan penjelasan fungsionalitas dan instruksi dari plugin ini.
+
+---
+
+## 🗺️ Roadmap & Checklist Pengembangan (Universal AI Support)
+Daftar tugas untuk versi mendatang jika ingin membuat repositori ini *100% Universal* dan bisa digunakan di berbagai AI Agent selain Antigravity (seperti Cursor, Claude Code, GitHub Copilot Workspace):
+
+- [ ] **Cross-Platform Adapters (Entry Points):**
+  - Buat file `.cursorrules` (untuk Cursor) yang mengarahkan AI membaca `skills/make-laprak/SKILL.md`.
+  - Buat file `CLAUDE.md` (untuk Claude Code) dengan instruksi serupa.
+  - Buat file `.github/copilot-instructions.md` (untuk GitHub Copilot).
+- [ ] **Agnostic Core Prompts:** Memisahkan *prompt* murni dari folder `skills/` ke folder netral seperti `core/` agar bahasanya tidak terikat satu platform saja.
+- [ ] **Fallback Script Pencari Jurnal:** Membuat *script* Python/Node (misal `scripts/search_jurnal.py`) sebagai pengganti fitur *Web Search* bagi AI yang tidak punya fitur bawaan pencarian internet.
+- [ ] **Integrasi MCP (Model Context Protocol):** Membuat konfigurasi server MCP untuk pencarian jurnal ilmiah agar menjadi kapabilitas *native* yang terstandarisasi di semua platform AI.
+- [ ] **Universal Setup Script:** Membuat file instalasi (misal `install.sh` / `install.bat`) yang menanyakan AI apa yang dipakai pengguna, lalu mengatur letak *symlink* atau folder secara otomatis.
