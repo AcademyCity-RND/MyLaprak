@@ -30,13 +30,40 @@ Kami sudah menyediakan script instalasi untuk mengonfigurasi Git Template:
 
 - `plugin.json`: File manifest yang mendeklarasikan folder ini sebagai plugin.
 - `skills/make-laprak/SKILL.md`: File instruksi AI (Prompt Utama).
+- `skills/make-laprak-info/SKILL.md`: File instruksi AI khusus untuk menampilkan dokumentasi bantuan (`/make-laprak-info`).
 - `skills/make-laprak/matkul/`: Folder berisi spesifikasi atau aturan per mata kuliah.
 - `skills/make-laprak/template-general/`: Folder berisi *template* laporan kosong yang dapat Anda konfigurasi nanti.
 
 ## 🚀 Cara Menggunakan (Workflow Mingguan)
 
-1. **Persiapan:** Masukkan modul PDF, kumpulkan *screenshot* bernomor di dalam `/screenshot-hasil/`, dan tulis `inisiasi.txt` (peta gambar) Anda di workspace Anda.
-2. **Panggil AI:** Buka fitur *chat* pada Antigravity di dalam *workspace* Anda. Plugin ini otomatis terdeteksi.
-3. **Ketik Perintah Dinamis Anda:**
-   > *"Gunakan skill laporan-praktikum untuk membuatkan laporan. Sectionnya akan jadi 2 yaitu Hasil Praktikum dan Hasil Akhir. Lihat seluruh png yang ada di folder ini saja..."*
-4. **Interaksi:** AI akan membaca `inisiasi.txt`, mengalokasikan teks untuk gambar yang belum ada, dan bekerja selangkah demi selangkah sesuai aturan di `SKILL.md`.
+**PENTING:** Anda **TIDAK PERLU** menaruh file tugas praktikum di dalam folder sistem plugin `MyLaprak`. Plugin ini bertindak sebagai "otak" di latar belakang.
+
+1. **Buat Folder Kerja:** Buat folder baru untuk pertemuan praktikum minggu ini **di mana saja** (misal: `D:\Tugas\Praktikum-Minggu-1`).
+2. **Siapkan Keperluan Laprak:** Di dalam folder kerja tersebut, kumpulkan file berikut:
+   - `inisiasi.txt` (Catatan/peta penjelasan Anda terkait praktikum).
+   - Folder `gambar/` atau `screenshot-hasil/` berisi gambar-gambar bernomor (misal `1.png`).
+   - Modul PDF (Opsional).
+   - `template.tex` (Opsional, jika format laporan matkul tersebut sering berubah. Jika menetap, biarkan AI yang mengambilnya dari memori plugin).
+3. **Panggil AI:** Buka terminal/workspace di folder kerja Anda tersebut, dan aktifkan obrolan dengan AI.
+4. **Ketik Perintah Dinamis Anda:**
+   > *"/make-laprak tolong buatkan laporan praktikum untuk matkul KEPL. Section pembahasannya dibagi jadi 2 yaitu Hasil Praktikum (untuk gambar 1-10) dan Hasil Akhir (untuk gambar 11-12). Analisis semua screenshot di folder screenshot-hasil dan cocokkan dengan deskripsi di file inisiasi.txt."*
+5. **Interaksi:** AI akan membaca `inisiasi.txt`, mengalokasikan teks untuk gambar yang belum ada, dan bekerja selangkah demi selangkah sesuai aturan di `SKILL.md`.
+
+## ℹ️ Informasi Tambahan
+Jika Anda lupa atau ingin mengecek panduan pemakaian dengan cepat, Anda bisa memanggil:
+> *"/make-laprak-info"*
+AI akan langsung merespons dengan penjelasan fungsionalitas dan instruksi dari plugin ini.
+
+---
+
+## 🗺️ Roadmap & Checklist Pengembangan (Universal AI Support)
+Daftar tugas untuk versi mendatang jika ingin membuat repositori ini *100% Universal* dan bisa digunakan di berbagai AI Agent selain Antigravity (seperti Cursor, Claude Code, GitHub Copilot Workspace):
+
+- [ ] **Cross-Platform Adapters (Entry Points):**
+  - Buat file `.cursorrules` (untuk Cursor) yang mengarahkan AI membaca `skills/make-laprak/SKILL.md`.
+  - Buat file `CLAUDE.md` (untuk Claude Code) dengan instruksi serupa.
+  - Buat file `.github/copilot-instructions.md` (untuk GitHub Copilot).
+- [ ] **Agnostic Core Prompts:** Memisahkan *prompt* murni dari folder `skills/` ke folder netral seperti `core/` agar bahasanya tidak terikat satu platform saja.
+- [ ] **Fallback Script Pencari Jurnal:** Membuat *script* Python/Node (misal `scripts/search_jurnal.py`) sebagai pengganti fitur *Web Search* bagi AI yang tidak punya fitur bawaan pencarian internet.
+- [ ] **Integrasi MCP (Model Context Protocol):** Membuat konfigurasi server MCP untuk pencarian jurnal ilmiah agar menjadi kapabilitas *native* yang terstandarisasi di semua platform AI.
+- [ ] **Universal Setup Script:** Membuat file instalasi (misal `install.sh` / `install.bat`) yang menanyakan AI apa yang dipakai pengguna, lalu mengatur letak *symlink* atau folder secara otomatis.
