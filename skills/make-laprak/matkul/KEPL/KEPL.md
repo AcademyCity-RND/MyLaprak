@@ -1,53 +1,61 @@
 # Pedoman Penulisan Laporan Mata Kuliah KEPL
-Dokumen ini merupakan panduan spesifik untuk AI dalam menyusun Laporan Praktikum mata kuliah Konstruksi dan Evolusi Perangkat Lunak (KEPL). Panduan ini diekstrak dari contoh laporan riil (`KEPL.tex`). 
+Dokumen ini merupakan panduan spesifik untuk AI dalam menyusun Laporan Praktikum mata kuliah Konstruksi dan Evolusi Perangkat Lunak (KEPL). Panduan ini diekstrak dari contoh laporan riil (`KEPL1.tex` dan `KEPL2.tex`). 
 
 Selalu patuhi aturan berikut saat *user* meminta laporan untuk matkul KEPL:
 
 ## 1. Struktur Bab dan Sub-bab
 Laporan KEPL umumnya memiliki hierarki baku berikut:
-- **Bab 1: Dasar Teori** (`\chapter{Dasar Teori}`)
-- **Bab 2: Hasil dan Pembahasan** (`\chapter{Hasil dan Pembahasan}`)
-  - **Hasil Praktikum** (`\section{Hasil Praktikum}`)
-  - (Opsional, tergantung tugas) **Tautan Repositori Kode Sumber** (`\section{Tautan Repositori Kode Sumber}`)
-- **Bab 3: Kesimpulan** (`\chapter{Kesimpulan}`)
-- **Daftar Pustaka** (`\begin{thebibliography}`)
+- **Bab: Dasar Teori** (`\chapter{Dasar Teori}`)
+- **Bab: Hasil dan Pembahasan** (`\chapter{Hasil dan Pembahasan}`)
+  - Gunakan `\section`, `\subsection`, hingga `\subsubsection` secara terstruktur untuk mengelompokkan tahapan pengerjaan.
+- **Bab: Kesimpulan** (`\chapter{Kesimpulan}`)
+- **Daftar Pustaka** (`\chapter{Daftar Pustaka}` atau `\begin{thebibliography}`)
 
 ## 2. Gaya Penulisan Dasar Teori
-- Tuliskan landasan teori secara akademis dan *to the point*.
-- Bagi menjadi sub-bab (`\section`) sesuai dengan topik teknologi atau konsep utama yang dibahas di praktikum (misal: Git, GitHub, Laravel, CI/CD).
-- **WAJIB** menggunakan sitasi/kutipan pada akhir kalimat penjelasan menggunakan perintah `\cite{kunci_sitasi}`. Jangan lupa siapkan daftar pustakanya di bagian paling bawah.
+- Tuliskan landasan teori secara akademis, mengalir (*narrative*), dan *to the point*.
+- Bagi menjadi sub-bab (`\section` atau `\subsection`) sesuai dengan topik teknologi utama.
+- **WAJIB** menggunakan sitasi/kutipan pada akhir kalimat penjelasan. Anda bisa menggunakan format `\cite{...}` atau format referensi manual `[\ref{...}]` bergantung pada cara Anda menyusun Daftar Pustaka nanti.
 
-## 3. Gaya Penulisan Hasil dan Pembahasan (Crucial)
-Ini adalah inti dari laporan KEPL. Format penggabungan gambar dan penjelasannya sangat spesifik:
-- Kelompokkan gambar-gambar yang memiliki konteks sama ke dalam `\subsection` atau `\subsubsection` yang rapi.
-- Setiap gambar di-*insert* menggunakan *environment* `\begin{figure}[H]`, lengkap dengan `\caption` dan `\label`. Lebar standar gambar adalah `0.6\textwidth` atau menyesuaikan jika gambar berpasangan.
-- **Tepat di bawah tag `\end{figure}`**, Anda WAJIB menambahkan teks `Penjelasan Gambar:` (tanpa dicetak tebal/miring).
-- Tepat di bawah teks tersebut, buatlah rincian penjelasan menggunakan poin-poin `\begin{itemize}`.
-- Isi *itemize* (poin-poin penjelasan) harus menjelaskan **apa yang terjadi di gambar tersebut secara analitis**, bukan sekadar mengulang judul gambar. 
+## 3. Tata Letak Gambar & Penjelasan (Hasil dan Pembahasan)
+Anda memiliki dua opsi gaya visual yang valid dari referensi riil. Gunakan secara dinamis berdasarkan seberapa padat langkah yang ada:
 
-*Contoh Format Kode:*
+### Gaya A: Analitis & Terpisah (Referensi KEPL1)
+Cocok untuk gambar tunggal yang butuh penjelasan teknis mendalam.
+- Gambar ditaruh menggunakan `\begin{figure}[H]` dengan `width=0.6\textwidth`.
+- **Tepat di bawah tag `\end{figure}`**, tambahkan teks `Penjelasan Gambar:` (tanpa *bold*).
+- Lalu jelaskan analisisnya menggunakan poin-poin `\begin{itemize}`.
+
+### Gaya B: Naratif & Dikelompokkan (Referensi KEPL2)
+Cocok untuk langkah berurutan (misal: tahap *Build*, lalu *Test*).
+- Penjelasan ditulis dalam bentuk **paragraf naratif tepat sebelum gambar** dipanggil.
+- Jika ada 2 gambar yang saling berkaitan erat, gabungkan ke dalam **satu blok `figure`** untuk menghemat ruang, pisahkan menggunakan `\vspace{0.5cm}`.
+- Gunakan lebar `width=0.9\textwidth`.
+
+*Contoh Format Kode Gaya B (Gambar Digabung):*
 ```latex
+Tahap Build dan Test dikonfigurasi khusus untuk menyetel environment pengujian agar sesuai...
+
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\textwidth]{"nama_gambar.png"}
-    \caption{Judul Gambar}
-    \label{fig:label_gambar}
+    \includegraphics[width=0.9\textwidth]{"gambar_build.png"}
+    \caption{Konfigurasi tahap Build}
+    
+    \vspace{0.5cm}
+    
+    \includegraphics[width=0.9\textwidth]{"gambar_test.png"}
+    \caption{Konfigurasi tahap Test}
 \end{figure}
-Penjelasan Gambar:
-\begin{itemize}
-    \item Poin analisis pertama terkait proses yang terjadi di gambar.
-    \item Poin analisis kedua yang lebih mendalam.
-\end{itemize}
 ```
 
 ## 4. Kesimpulan
-- Kesimpulan harus ditulis menggunakan penomoran `\begin{enumerate}`.
-- Isi kesimpulan adalah rangkuman dari *best practices* atau esensi praktikum yang dilakukan (berdasarkan Bab Hasil dan Pembahasan). Jangan membuat kesimpulan yang terlalu umum.
+- Kesimpulan ditulis secara komprehensif, bukan terlalu umum.
+- Jika berupa poin, gunakan penomoran `\begin{enumerate}`. Namun, format paragraf tunggal yang solid juga diizinkan.
+- Kesimpulan harus mencakup *best practices* atau esensi arsitektur/teknologi dari praktikum (misal: CI/CD, Branch Protection, dsb).
 
 ## 5. Daftar Pustaka
-- Gunakan *environment* standar `\begin{thebibliography}{9}`.
-- Format penulisan referensi menggunakan gaya APA sederhana atau format standar buku/jurnal teknis.
-- Pastikan semua kunci sitasi (`\bibitem{...}`) cocok persis dengan yang dipanggil di Bab Dasar Teori (`\cite{...}`).
+Anda bisa menggunakan salah satu dari dua format valid ini (pilih salah satu dan konsisten):
+- **Format Bawaan:** `\begin{thebibliography}{9}` lalu gunakan `\bibitem{label}`. Di teks dipanggil dengan `\cite{label}`.
+- **Format Enumerate:** `\chapter{Daftar Pustaka}` diikuti `\begin{enumerate}` lalu `\item \label{label} Deskripsi buku/web`. Di teks dipanggil dengan `[\ref{label}]`.
 
 ---
-**Instruksi untuk AI:** Saat mengerjakan laporan KEPL, selalu baca `inisiasi.txt` dari user, lalu terjemahkan penjelasan user tersebut ke dalam format `itemize` di bawah gambar sesuai kaidah di atas!
+**Instruksi untuk AI:** Saat mengerjakan laporan KEPL, baca `inisiasi.txt` secara mendalam. Jika penjelasannya singkat, Anda bisa menggabungkan beberapa gambar dalam satu `figure` (Gaya B). Jika penjelasannya panjang per gambar, pecah dan gunakan `itemize` (Gaya A)!
