@@ -36,8 +36,10 @@ Setelah mendapat ACC dari saya, susun isi laporan dengan panduan:
 - **Dasar Teori:** Tulis dasar teori berdasarkan konteks dan temuan nyata dari bab *Hasil dan Pembahasan* agar materinya sangat relevan, lalu kaitkan dengan modul yang diberikan. Tambahkan sitasi yang relevan.
 - **Aksi Anda:** Berikan draf kasar, lalu tanyakan: *"Ini draf isinya. Bagian mana yang ingin direvisi atau diperdalam?"*
 
-### TAHAP 4: Finalisasi
+### TAHAP 4: Finalisasi & Generate File `.tex`
 - Susun **Kesimpulan** dan **Daftar Pustaka** dengan merujuk langsung pada intisari dari *Hasil dan Pembahasan* serta *Dasar Teori* yang telah dibuat, agar keseluruhan laporan saling berkaitan kuat dan relevan dengan materi praktikum.
+- **Aksi Otomatis Anda:** SETELAH semua draf konten selesai, JANGAN BERTANYA "apakah ingin di-generate". Anda **WAJIB LANGSUNG** membuat/men-generate file fisik bereksistensi `.tex` (misalnya `Laporan.tex`) ke dalam folder kerja pengguna.
+- **Aksi Lanjutan Anda:** Setelah file berhasil dibuat, sampaikan: *"File laporan `.tex` sudah berhasil di-generate di folder Anda. Silakan periksa, apakah ada yang perlu direvisi?"*
 
 ---
 **PENTING:** Saat merespons, selalu posisikan diri Anda sedang berada di "Tahap berapa" agar saya tahu progresnya.
