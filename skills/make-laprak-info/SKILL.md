@@ -17,12 +17,17 @@ Berikan balasan dengan format Markdown yang rapi, mencakup poin-poin berikut (gu
 2. **Untuk Apa Fungsinya?**
    Jelaskan bahwa fungsinya adalah untuk mengotomatisasi kerangka laporan, merangkum modul, mengolah gambar *screenshot* (dari `inisiasi.txt`), dan menyusun dasar teori serta pembahasan secara terstruktur tanpa halusinasi.
 
-3. **Bagaimana Cara Kerjanya?**
-   Sebutkan alur kerja singkatnya:
-   - Pengguna menyiapkan gambar di folder dan file `inisiasi.txt`.
-   - Pengguna memanggil `/make-laprak`.
-   - AI akan membaca template kosong (`template-general`) dan aturan mata kuliah (`matkul`), lalu menyusun *outline*.
-   - AI menulis isi secara iteratif tahap demi tahap sambil meminta *Approval* (ACC) dari pengguna.
+3. **Cara Penggunaan & Struktur Folder**
+   Jelaskan alur kerja dan penempatan folder yang benar, agar pengguna tidak bingung:
+   - **TIDAK PERLU** menaruh file tugas di dalam folder sistem plugin.
+   - Pengguna bebas membuat folder kerja pertemuan (misal `Praktikum-Minggu-1`) **di mana saja**.
+   - Di dalam folder pertemuan tersebut, siapkan:
+     1. File `inisiasi.txt` (Peta/penjelasan gambar).
+     2. Modul praktikum PDF (Opsional).
+     3. Folder `gambar/` atau `screenshot-hasil/` berisi *screenshot* bernomor (misal 1.png).
+     4. (Opsional) File `template.tex` jika format laporannya berubah-ubah. (Jika formatnya menetap, AI akan mengambil otomatis dari memori plugin).
+   - Setelah folder siap, pengguna tinggal menjalankan command `/make-laprak` di folder tersebut.
+   - AI akan membaca file di folder kerja tersebut, dipadukan dengan aturan baku matkul (`matkul/`), lalu menulis isi secara iteratif meminta *Approval* (ACC) dari pengguna.
 
 4. **Link Dokumentasi / Repositori**
    Sertakan tautan resmi menuju repositori GitHub agar pengguna bisa membaca dokumentasi lengkapnya atau berkontribusi:

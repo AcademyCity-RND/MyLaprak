@@ -36,11 +36,18 @@ Kami sudah menyediakan script instalasi untuk mengonfigurasi Git Template:
 
 ## 🚀 Cara Menggunakan (Workflow Mingguan)
 
-1. **Persiapan:** Masukkan modul PDF, kumpulkan *screenshot* bernomor di dalam `/screenshot-hasil/`, dan tulis `inisiasi.txt` (peta gambar) Anda di workspace Anda.
-2. **Panggil AI:** Buka fitur *chat* pada Antigravity di dalam *workspace* Anda. Plugin ini otomatis terdeteksi.
-3. **Ketik Perintah Dinamis Anda:**
-   > *"/make-laprak tolong buatkan laporan praktikum untuk matkul Jaringan. Section pembahasannya dibagi jadi 2 yaitu Hasil Praktikum (untuk gambar 1-10) dan Hasil Akhir (untuk gambar 11-12). Analisis semua screenshot di folder screenshot-hasil dan cocokkan dengan deskripsi di file inisiasi.txt."*
-4. **Interaksi:** AI akan membaca `inisiasi.txt`, mengalokasikan teks untuk gambar yang belum ada, dan bekerja selangkah demi selangkah sesuai aturan di `SKILL.md`.
+**PENTING:** Anda **TIDAK PERLU** menaruh file tugas praktikum di dalam folder sistem plugin `MyLaprak`. Plugin ini bertindak sebagai "otak" di latar belakang.
+
+1. **Buat Folder Kerja:** Buat folder baru untuk pertemuan praktikum minggu ini **di mana saja** (misal: `D:\Tugas\Praktikum-Minggu-1`).
+2. **Siapkan Keperluan Laprak:** Di dalam folder kerja tersebut, kumpulkan file berikut:
+   - `inisiasi.txt` (Catatan/peta penjelasan Anda terkait praktikum).
+   - Folder `gambar/` atau `screenshot-hasil/` berisi gambar-gambar bernomor (misal `1.png`).
+   - Modul PDF (Opsional).
+   - `template.tex` (Opsional, jika format laporan matkul tersebut sering berubah. Jika menetap, biarkan AI yang mengambilnya dari memori plugin).
+3. **Panggil AI:** Buka terminal/workspace di folder kerja Anda tersebut, dan aktifkan obrolan dengan AI.
+4. **Ketik Perintah Dinamis Anda:**
+   > *"/make-laprak tolong buatkan laporan praktikum untuk matkul KEPL. Section pembahasannya dibagi jadi 2 yaitu Hasil Praktikum (untuk gambar 1-10) dan Hasil Akhir (untuk gambar 11-12). Analisis semua screenshot di folder screenshot-hasil dan cocokkan dengan deskripsi di file inisiasi.txt."*
+5. **Interaksi:** AI akan membaca `inisiasi.txt`, mengalokasikan teks untuk gambar yang belum ada, dan bekerja selangkah demi selangkah sesuai aturan di `SKILL.md`.
 
 ## ℹ️ Informasi Tambahan
 Jika Anda lupa atau ingin mengecek panduan pemakaian dengan cepat, Anda bisa memanggil:
