@@ -27,7 +27,7 @@ Berikan balasan dengan format Markdown yang rapi, mencakup poin-poin berikut (gu
      3. Folder `gambar/` atau `screenshot-hasil/` berisi *screenshot* bernomor (misal 1.png).
      4. (Opsional) File `template.tex` jika format laporannya berubah-ubah. (Jika formatnya menetap, AI akan mengambil otomatis dari memori plugin).
    - Setelah folder siap, pengguna tinggal menjalankan command `/make-laprak` di folder tersebut.
-   - AI akan membaca file di folder kerja tersebut, dipadukan dengan aturan baku matkul (`matkul/`), lalu menulis isi secara iteratif meminta *Approval* (ACC) dari pengguna.
+   - AI akan memandu penyusunan secara iteratif (Tahap 1-3), dan pada Tahap 4 AI akan **langsung/otomatis membuat file fisik `.tex`** di folder kerja pengguna.
 
 4. **Link Dokumentasi / Repositori**
    Sertakan tautan resmi menuju repositori GitHub agar pengguna bisa membaca dokumentasi lengkapnya atau berkontribusi:
