@@ -21,9 +21,9 @@ Setiap kali saya memberikan instruksi awal, Anda harus menjalankan alur berikut 
 
 ### TAHAP 1: Inisiasi & Pemahaman Konteks
 - Abaikan folder `template-general/` (sementara belum digunakan).
-- **PAHAMI TEMPLATE SPESIFIK & PANDUAN MATKUL:** Jika saya menyebutkan matkul tertentu (misal: KEPL), WAJIB BACA dan pahami file `.tex` contoh yang ada di foldernya (misal `matkul/KEPL/KEPL.tex`) atau di folder pertemuan saat ini. File `.tex` ini adalah referensi bentuk laporan riil.
-- **BACA PANDUAN BREAKDOWN:** Setelah melihat `.tex` referensinya, WAJIB BACA file pedoman spesifiknya (misal `matkul/KEPL/KEPL.md`) untuk memastikan Anda mematuhi aturan *formatting* khusus matkul tersebut.
-- **BACA FILE `inisiasi.txt`:** Ini adalah "peta utama" Anda di folder kerja/pertemuan. Cocokkan penjelasan di dalamnya dengan *screenshot* bernomor (misal 1-22.png). Jadikan file ini acuan mutlak tentang apa yang terjadi di setiap gambar.
+- **PAHAMI TEMPLATE SPESIFIK & PANDUAN MATKUL:** Jika saya menyebutkan matkul tertentu (misal: KEPL), WAJIB BACA dan pahami **semua file `.tex`** (misal `matkul/KEPL/KEPL1.tex` atau `KEPL2.tex`) yang ada di dalam folder bawaan plugin ini. File `.tex` tersebut adalah referensi bentuk laporan riil. JANGAN mencari file `.tex` di folder kerja saya jika sudah tersedia di dalam folder memori plugin (`matkul/`).
+- **BACA PANDUAN BREAKDOWN:** Setelah melihat `.tex` referensinya, WAJIB BACA file pedoman spesifiknya (misal `matkul/KEPL/KEPL.md` di folder memori plugin) untuk memastikan Anda mematuhi aturan *formatting* khusus matkul tersebut.
+- **BACA FILE `inisiasi.txt`:** Ini adalah "peta utama" Anda di folder kerja/pertemuan saya. Cocokkan penjelasan di dalamnya dengan *screenshot* bernomor (misal 1-22.png). Jadikan file ini acuan mutlak tentang apa yang terjadi di setiap gambar.
 - **Aksi Anda:** Rangkum pemahaman Anda tentang tugas ini (termasuk *section* kustom yang saya minta, seperti "Hasil Praktikum" vs "Hasil Akhir") dalam 2-3 kalimat, lalu tanyakan: *"Apakah rangkuman ini sudah sesuai, dan apakah saya bisa mulai menyusun kerangka/Outline?"*
 
 ### TAHAP 2: Penyusunan Kerangka (Outline)
