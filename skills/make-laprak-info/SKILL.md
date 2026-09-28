@@ -32,10 +32,11 @@ Berikan balasan dengan format Markdown yang rapi, mencakup poin-poin berikut:
    - Buka workspace/terminal di folder tersebut, lalu ketik perintah Anda. Contoh:
      > `/make-laprak buatkan laporan KEPL, saya sudah siapkan inisiasi.txt dan folder gambar`
 
-4. **Alur Kerja (4 Tahap)**
+4. **Alur Kerja (5 Tahap)**
    - **Tahap 1:** AI membaca referensi dan `inisiasi.txt`, lalu merangkum pemahaman → minta ACC.
    - **Tahap 2:** AI menyusun kerangka/outline laporan → minta ACC.
-   - **Tahap 3:** AI menulis draf konten per bab → minta ACC untuk revisi.
+   - **Tahap 3a:** AI menulis draf *Hasil dan Pembahasan* → minta ACC untuk revisi.
+   - **Tahap 3b:** AI menulis draf *Dasar Teori* → minta ACC untuk revisi.
    - **Tahap 4:** AI menyusun Kesimpulan + Daftar Pustaka, lalu **langsung membuat file `.tex`** di folder Anda.
 
 5. **Menambahkan Mata Kuliah Baru**

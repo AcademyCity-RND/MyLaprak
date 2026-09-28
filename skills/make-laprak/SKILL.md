@@ -62,31 +62,35 @@ Folder referensi `matkul/` adalah bagian dari plugin ini dan **BUKAN** di folder
 
 > **DILARANG:** Menulis konten detail di tahap ini. Hanya kerangka poin-poin.
 
-### TAHAP 3: Drafting Konten (Iteratif)
+### TAHAP 3a: Drafting — Hasil dan Pembahasan
 
-Setelah mendapat ACC, susun isi laporan **per bab**:
+Setelah mendapat ACC outline, tulis bab **Hasil dan Pembahasan**:
 
-1. **Hasil dan Pembahasan** (tulis duluan):
-   - Tulis berdasarkan gambar bernomor dan penjelasan di `inisiasi.txt`.
-   - Ikuti gaya tata letak gambar dari pedoman `.md` matkul (Gaya A/B/C).
-   - Jelaskan secara analitis, bukan sekadar mengulang judul gambar.
+1. Tulis berdasarkan gambar bernomor dan penjelasan di `inisiasi.txt`.
+2. Ikuti gaya tata letak gambar dari pedoman `.md` matkul (Gaya A/B/C).
+3. Jelaskan secara analitis, bukan sekadar mengulang judul gambar.
+4. **Output:** Berikan draf Hasil dan Pembahasan, lalu tanyakan: *"Ini draf Hasil dan Pembahasan. Bagian mana yang ingin direvisi?"*
 
-2. **Dasar Teori** (tulis setelah Hasil):
-   - Tulis berdasarkan konteks dan temuan dari bab Hasil dan Pembahasan agar materinya sangat relevan.
-   - Kaitkan dengan modul yang diberikan. Tambahkan sitasi yang relevan.
-   - Sisipkan gambar ilustrasi konsep jika ada.
+> **DILARANG:** Menulis Dasar Teori, Kesimpulan, atau Daftar Pustaka di tahap ini.
 
-3. **Output:** Berikan draf per bab, lalu tanyakan: *"Ini draf isinya. Bagian mana yang ingin direvisi atau diperdalam?"*
+### TAHAP 3b: Drafting — Dasar Teori
 
-> **DILARANG:** Menulis Kesimpulan dan Daftar Pustaka di tahap ini.
+Setelah Hasil dan Pembahasan di-ACC:
+
+1. Tulis Dasar Teori berdasarkan konteks dan temuan dari bab Hasil dan Pembahasan agar materinya sangat relevan.
+2. Kaitkan dengan modul yang diberikan. Tambahkan sitasi yang relevan.
+3. Sisipkan gambar ilustrasi konsep jika ada.
+4. **Output:** Berikan draf Dasar Teori, lalu tanyakan: *"Ini draf Dasar Teori. Bagian mana yang ingin direvisi?"*
+
+> **DILARANG:** Menulis Kesimpulan atau Daftar Pustaka di tahap ini.
 
 ### TAHAP 4: Finalisasi & Generate File `.tex`
 
-Setelah seluruh konten Tahap 3 di-ACC:
+Setelah Dasar Teori di-ACC:
 
 1. Susun **Kesimpulan** berdasarkan intisari Hasil dan Pembahasan.
 2. Susun **Daftar Pustaka** dengan format yang sesuai pedoman matkul.
-3. **AKSI OTOMATIS:** Setelah semua draf konten selesai, **JANGAN BERTANYA** "apakah ingin di-generate". Anda **WAJIB LANGSUNG** membuat file fisik `.tex` (misalnya `Laporan.tex`) ke folder kerja pengguna menggunakan tool `write_to_file`.
+3. **AKSI OTOMATIS:** Setelah semua konten selesai, **JANGAN BERTANYA** "apakah ingin di-generate". Anda **WAJIB LANGSUNG** membuat file fisik `.tex` (misalnya `Laporan.tex`) ke folder kerja pengguna menggunakan tool `write_to_file`.
 4. **Output:** Sampaikan: *"File laporan `.tex` sudah berhasil di-generate di folder Anda. Silakan periksa, apakah ada yang perlu direvisi?"*
 
 > **DILARANG:** Menampilkan seluruh kode LaTeX di chat tanpa membuat file fisiknya.

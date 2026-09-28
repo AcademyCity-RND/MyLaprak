@@ -23,9 +23,10 @@ git clone https://github.com/AcademyCity-RND/MyLaprak.git .agents/plugins/make-l
 MyLaprak/
 ├── plugin.json                          # Manifest plugin
 ├── README.md                            # Dokumentasi ini
+├── CONTRIBUTING.md                      # Panduan kontributor
 ├── scripts/                             # Script utilitas (co-author, dll)
 ├── skills/
-│   ├── make-laprak/                     # Skill utama
+│   ├── make-laprak/                     # Skill utama — menulis laporan
 │   │   ├── SKILL.md                     # Instruksi AI (System Prompt)
 │   │   ├── matkul/                      # Referensi per mata kuliah
 │   │   │   └── KEPL/                    # Contoh: mata kuliah KEPL
@@ -34,6 +35,8 @@ MyLaprak/
 │   │   │       ├── KEPL2.tex            # Contoh laporan riil #2
 │   │   │       └── KEPL3.tex            # Contoh laporan riil #3
 │   │   └── template-general/            # Template umum (reserved)
+│   ├── breakdown-matkul/                # Skill breakdown .tex → .md
+│   │   └── SKILL.md
 │   └── make-laprak-info/                # Skill info/bantuan
 │       └── SKILL.md
 ```
@@ -58,11 +61,12 @@ Buka workspace/terminal di folder tersebut, lalu ketik perintah. Contoh:
 ```
 
 ### Langkah 4 — Ikuti Alur Iteratif
-AI akan bekerja dalam **4 tahap** dan selalu meminta persetujuan (ACC) Anda:
+AI akan bekerja dalam **5 tahap** dan selalu meminta persetujuan (ACC) Anda:
 1. **Tahap 1 — Inisiasi:** AI membaca referensi dan merangkum pemahaman.
 2. **Tahap 2 — Outline:** AI menyusun kerangka laporan.
-3. **Tahap 3 — Drafting:** AI menulis draf konten per bab.
-4. **Tahap 4 — Finalisasi:** AI menyusun Kesimpulan + Daftar Pustaka, lalu **langsung membuat file `.tex`** di folder Anda.
+3. **Tahap 3a — Hasil dan Pembahasan:** AI menulis draf bab ini.
+4. **Tahap 3b — Dasar Teori:** AI menulis draf bab ini.
+5. **Tahap 4 — Finalisasi:** AI menyusun Kesimpulan + Daftar Pustaka, lalu **langsung membuat file `.tex`** di folder Anda.
 
 ## 🎨 Menambahkan Gaya Matkul Baru
 
